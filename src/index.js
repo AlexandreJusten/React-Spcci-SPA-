@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app/App.jsx';
+import AppRoutes from './app/routes.js';
 
 
 //Web-App
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+      <AppRoutes />
+    </React.StrictMode>
+  )

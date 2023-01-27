@@ -1,12 +1,12 @@
 import React from "react"
 
-function App() {
+function Login() {
 
   return (
     <div>
-      <h1>Meu app435</h1>
+      <h1>Meu Login</h1>
     </div>
   )
 }
 
-export default App
+export default Login

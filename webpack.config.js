@@ -2,13 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/index.js',
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '/dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
-  }
-};
-module.exports = {
+  },
     //...
     module: {
       rules: [
@@ -28,10 +26,14 @@ module.exports = {
         }
       ]
     },
+    devServer: {
+      historyApiFallback: true
+    },
     plugins:[
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/app/index.html'
+            template: './src/app/index.html',
+            historyApiFallback: true
         })
     ]
   };
