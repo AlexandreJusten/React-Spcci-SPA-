@@ -1,0 +1,12 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title":"API de manipulacao",
+        "description":"teste",
+        "termsOfService":"http://www.localhost:5000",
+        "contact":{
+            "email":"spcci@spcci.com"
+        },
+        "version":"1.0.0"
+    }
+}
